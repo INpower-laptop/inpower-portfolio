@@ -6,7 +6,7 @@
  <br>
 </p>
 
-# Nextly - Landing Page Template with Next.js & Tailwind CSS
+# Nextly - Landing Page Template with Next.js & Tailwind CSS.
 
 
  
