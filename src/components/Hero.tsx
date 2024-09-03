@@ -3,7 +3,7 @@ export const Hero = () => {
   return (
     <>
       <div className="relative bg-[url('../../public/img/hero.jpg')] bg-cover bg-center p-0 pb-20 pt-40 md:h-auto h-screen">
-        {/* Gradient Overlay */}
+        {/* Gradient Overlay gctg */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/60 to-black/60"></div>
         
         {/* Content Section */}
