@@ -2,7 +2,7 @@
 export const Hero = () => {
   return (
     <>
-      <div className="relative bg-[url('../../public/img/hero.jpg')] bg-cover bg-center p-0 pb-20 pt-40 md:h-auto h-screen">
+      <div className="relative bg-[url('../../public/img/hero.webp')] bg-cover bg-center p-0 pb-20 pt-40 md:h-auto h-screen">
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/60 to-black/60"></div>
         
@@ -20,7 +20,7 @@ export const Hero = () => {
         href=""
         target="_blank"
         rel="noopener"
-        className="md:px-6 px-4 py-2 md:py-3 md:text-lg font-bold bg-sky-400  border-blue-900 border-2 text-blue-900 rounded-md shadow-4xl transition duration-300 hover:scale-105 hover:text-sky-400 hover:border-sky-400 hover:bg-blue-900">
+        className="md:px-6 px-4 py-2 md:py-3 md:text-lg font-bold bg-sky-300  border-blue-900 border-2 text-blue-900 rounded-md shadow-4xl transition duration-300 hover:scale-105 hover:text-sky-300 hover:border-sky-300 hover:bg-blue-900">
         Get Your Laptop Fixed Today
       </a>
     </div>

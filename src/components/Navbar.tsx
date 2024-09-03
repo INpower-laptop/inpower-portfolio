@@ -35,12 +35,9 @@ export const Navbar = () => {
                   </span>
                 </Link>
 
-                
-                <div className="lg:hidden flex ml-auto w-1/2 justify-end"> <ThemeChanger /> </div>
-
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-blue-900 focus:text-blue-900 focus:bg-sky-200 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
                 >
                   <svg
                     className="w-6 h-6 fill-current"
@@ -61,7 +58,8 @@ export const Navbar = () => {
                     )}
                   </svg>
                 </Disclosure.Button>
-                
+
+                <div className="lg:hidden pl-4"> <ThemeChanger /> </div>  
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   {navigation.map((item, index) => (
                     <Link

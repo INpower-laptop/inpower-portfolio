@@ -102,15 +102,15 @@ const Testimonials: React.FC<ServicesProps> = ({ ServiceData }) => {
                   >
                     <CardBody>
                       <img
-                        className="h-auto max-w-lg rounded-xl m-3 border-2 border-sky-300"
+                        className="h-auto max-w-lg rounded-xl m-3 border-2 border-sky-800"
                         src={Services.imageSrc}
                       />
 
                       <div className="flex flex-col items-center justify-center p-4">
-                        <h3 className="text-2xl font-bold leading-tight text-blue-900 dark:text-white my-3 text-center">
+                        <h3 className="text-xl  lg:text-2xl font-bold leading-tight text-blue-900 dark:text-white text-center">
                           {Services.name}
                         </h3>      
-                        <p className="text-lg font-normal my-5 text-gray-500 dark:text-gray-400 text-center">
+                        <p className="text-sm lg:text-lg font-normal my-5 text-gray-500 dark:text-gray-400 text-justify md:text-center">
                           {Services.description}
                         </p>
                       </div>
