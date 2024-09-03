@@ -22,8 +22,8 @@ const config: Config = {
           '50%': { transform: 'translateY(-15px)' },
         },
         fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
       },
       animation: {

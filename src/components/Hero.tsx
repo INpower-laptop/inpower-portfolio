@@ -13,7 +13,7 @@ export const Hero = () => {
       INpower Laptop Repairing Centertyty
     </h1>
     <p className="mt-5 text-lg sm:text-xl lg:text-2xl text-gray-200">
-      Expert repairs and upgrades to keep your laptop running like new
+      Expert repairs and upgrades to keep your laptop running like new 
     </p>
     <div className="mt-8 flex justify-center">
       <a
