@@ -10,7 +10,7 @@ export const Hero = () => {
         <div className="relative flex flex-col place-items-center justify-center text-center py-20 sm:py-32">
   <div className="w-full max-w-4xl px-4 sm:px-6 lg:px-8">
     <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl xl:text-6xl leading-tight">
-      INpower Laptop Repairing Center
+      INpower Laptop Repairing Center.
     </h1>
     <p className="mt-5 text-lg sm:text-xl lg:text-2xl text-gray-200">
       Expert repairs and upgrades to keep your laptop running like new.
