@@ -35,6 +35,9 @@ export const Navbar = () => {
                   </span>
                 </Link>
 
+                
+                <div className="lg:hidden flex ml-auto w-1/2 justify-end"> <ThemeChanger /> </div>
+
                 <Disclosure.Button
                   aria-label="Toggle Menu"
                   className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
@@ -58,7 +61,7 @@ export const Navbar = () => {
                     )}
                   </svg>
                 </Disclosure.Button>
-
+                
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   {navigation.map((item, index) => (
                     <Link
@@ -93,6 +96,7 @@ export const Navbar = () => {
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <ThemeChanger />
         </div>
+      
       </nav>
     </div>
   );
