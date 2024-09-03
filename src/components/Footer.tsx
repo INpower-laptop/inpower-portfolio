@@ -13,7 +13,7 @@ export function Footer() {
     { name: "FAQ", href: "#Faq" },
     { name: "Contact", href: "#Contact" },
   ];
-  
+
   return (
     <div className="relative">
       <Container>
@@ -32,13 +32,13 @@ export function Footer() {
                   height="80"
                   className="w-40"
                 />
-               
+
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-            INpower Laptop Repairing Center provides expert laptop repair services. Trust us 
-            to keep your devices running smoothly. Your satisfaction is our priority.
+              INpower Laptop Repairing Center provides expert laptop repair services. Trust us
+              to keep your devices running smoothly. Your satisfaction is our priority.
             </div>
 
           </div>
@@ -56,7 +56,7 @@ export function Footer() {
               ))}
             </div>
           </div>
-         
+
           <div className="">
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
@@ -92,19 +92,19 @@ export function Footer() {
 
             <div className="mt-5">
               <p> Contact </p>
-              <p className="text-gray-600 mt-4"> +94 75 628 1084 </p> 
-              
+              <p className="text-gray-600 mt-4"> +94 75 628 1084 </p>
+
             </div>
           </div>
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()} All Rights Reserved 
+          Copyright © {new Date().getFullYear()} All Rights Reserved
         </div>
-          
+
       </Container>
       {/* Do not remove this */}
-  
+
     </div>
   );
 }
@@ -164,10 +164,10 @@ const Backlink = () => {
       rel="noopener"
       className="absolute flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center left-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300"
     >
-     
-   
 
-     
+
+
+
     </a>
   );
 };

@@ -8,7 +8,7 @@ import Fade from "./ui/Fade";
 import ResponsiveBox from "./ui/Responsivebox";
 
 
-interface serviceData{
+interface serviceData {
   imageSrc: string;
   name: string;
   description: string;
@@ -58,15 +58,15 @@ const Testimonials: React.FC<ServicesProps> = ({ ServiceData }) => {
     trackMouse: true,
   });
 
-  
+
   return (
-    
+
     <ResponsiveBox
       classNames="bg-[var(--dialogColor)] items-center justify-center"
-      
+
     >
       <section className="bg-white dark:bg-[var(--bgColor)] bg-[var(--bgColor)] w-full">
-      
+
 
         <Fade opacity={0.8}>
           <div
@@ -93,7 +93,7 @@ const Testimonials: React.FC<ServicesProps> = ({ ServiceData }) => {
                   initial={{ x: "0%", scale: 1, zIndex: 1 }}
                   animate={position}
                   transition={{ duration: 0.6 }}
-                  // style={{ width: "35%" }}
+                // style={{ width: "35%" }}
                 >
                   <Card
                     isBlurred
@@ -109,7 +109,7 @@ const Testimonials: React.FC<ServicesProps> = ({ ServiceData }) => {
                       <div className="flex flex-col items-center justify-center p-4">
                         <h3 className="text-xl  lg:text-2xl font-bold leading-tight text-blue-900 dark:text-white text-center">
                           {Services.name}
-                        </h3>      
+                        </h3>
                         <p className="text-sm lg:text-lg font-normal my-5 text-gray-500 dark:text-gray-400 text-justify md:text-center">
                           {Services.description}
                         </p>
@@ -123,9 +123,9 @@ const Testimonials: React.FC<ServicesProps> = ({ ServiceData }) => {
         </Fade>
       </section>
     </ResponsiveBox>
- 
+
   );
 };
 
 
-export {Testimonials};
+export { Testimonials };

@@ -59,7 +59,7 @@ export const Navbar = () => {
                   </svg>
                 </Disclosure.Button>
 
-                <div className="lg:hidden pl-4"> <ThemeChanger /> </div>  
+                <div className="lg:hidden pl-4"> <ThemeChanger /> </div>
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   {navigation.map((item, index) => (
                     <Link
@@ -94,7 +94,7 @@ export const Navbar = () => {
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <ThemeChanger />
         </div>
-      
+
       </nav>
     </div>
   );
