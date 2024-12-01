@@ -1,4 +1,4 @@
-import { Container } from "@/components/Container";
+"use client";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Benefits } from "@/components/Benefits";
@@ -6,11 +6,22 @@ import { Testimonials } from "@/components/Testimonials";
 import { serviceData } from "@/data/serviceData";
 import { Faq } from "@/components/Faq";
 import { Contact } from "@/components/Contact";
+import Lenis from "lenis";
+import { useEffect } from "react";
 
 
 import { benefitOne } from "@/components/data";
 
 export default function Home() {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time:any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <>
           

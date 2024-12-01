@@ -45,7 +45,7 @@ export const Faq = () => {
                   <DisclosureButton className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-sky-50 hover:bg-sky-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
                     <span>{item.question}</span>
                     <ChevronUpIcon
-                      className={`${open ? "" : "transform rotate-180"
+                      className={`${open ? "duration-300" : "transform rotate-180 duration-300"
                         } w-5 h-5 text-indigo-500`}
                     />
                   </DisclosureButton>

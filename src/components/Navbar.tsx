@@ -14,7 +14,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="w-full fixed bg-white dark:bg-gray-900 shadow-md z-50">
+    <div className="w-full fixed bg-white dark:bg-gray-900 shadow-md z-[100]">
       <nav className="container relative flex flex-wrap items-center justify-between p-4 md:px-20 mx-auto lg:justify-between">
         {/* Logo */}
         <Disclosure>
@@ -65,7 +65,7 @@ export const Navbar = () => {
                     <Link
                       key={index}
                       href={item.href}
-                      className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                      className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 dark:hover:text-sky-300 "
                     >
                       {item.name}
                     </Link>
@@ -82,7 +82,7 @@ export const Navbar = () => {
               <li className="mr-3 nav__item" key={index}>
                 <Link
                   href={item.href}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 dark:hover:text-sky-300 "
                 >
                   {item.name}
                 </Link>

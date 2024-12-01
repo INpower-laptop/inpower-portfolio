@@ -6,6 +6,7 @@ import { Card, CardBody } from "@nextui-org/react";
 import { useSwipeable } from "react-swipeable";
 import Fade from "./ui/Fade";
 import ResponsiveBox from "./ui/Responsivebox";
+import { useInView } from "react-intersection-observer";
 
 
 interface serviceData {
@@ -58,16 +59,15 @@ const Testimonials: React.FC<ServicesProps> = ({ ServiceData }) => {
     trackMouse: true,
   });
 
+  const [ref, inView] = useInView({
+    threshold: 0.1, // Adjust threshold as needed
+    triggerOnce: true, // Ensures the animation runs only once
+  });
+
 
   return (
-
-    <ResponsiveBox
-      classNames="bg-[var(--dialogColor)] items-center justify-center"
-
-    >
+    <ResponsiveBox classNames="bg-[var(--dialogColor)] items-center justify-center">
       <section className="bg-white dark:bg-[var(--bgColor)] bg-[var(--bgColor)] w-full">
-
-
         <Fade opacity={0.8}>
           <div
             className="relative h-[550px] flex items-center justify-center w-full overflow-hidden"
@@ -76,25 +76,24 @@ const Testimonials: React.FC<ServicesProps> = ({ ServiceData }) => {
             <div
               className="absolute inset-0 w-1/2"
               onClick={handleNext}
-              style={{ cursor: "pointer", zIndex: 999 }}
+              style={{ cursor: "pointer", zIndex: 10 }}
             />
             <div
               className="absolute inset-0 w-1/2 left-1/2 "
               onClick={handleBack}
-              style={{ cursor: "pointer", zIndex: 999 }}
+              style={{ cursor: "pointer", zIndex: 10 }}
             />
-
             {ServiceData.map((Services, index) => {
               const position = calculatePositions(positionIndexes[index]);
               return (
                 <motion.div
-                  key={index}
-                  className="rounded-[12px] absolute w-[80%] sm:w-[55%] md:w-[35%]"
-                  initial={{ x: "0%", scale: 1, zIndex: 1 }}
-                  animate={position}
-                  transition={{ duration: 0.6 }}
-                // style={{ width: "35%" }}
-                >
+                ref={ref}
+                key={index}
+                className="rounded-[12px] absolute w-[80%] sm:w-[55%] md:w-[35%]"
+                initial={{ x: "0%", scale: 1 }}
+                animate={inView ? position : {}} 
+                transition={{ duration: 0.6 }}
+              >
                   <Card
                     isBlurred
                     className=" bg-white dark:bg-gray-900 max-w-[610px] border-2 border-sky-800 w-full shadow-lg rounded-xl mx-auto"
@@ -123,9 +122,6 @@ const Testimonials: React.FC<ServicesProps> = ({ ServiceData }) => {
         </Fade>
       </section>
     </ResponsiveBox>
-
   );
 };
-
-
 export { Testimonials };

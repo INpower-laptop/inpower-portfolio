@@ -15,8 +15,8 @@ export const Contact: React.FC = () => {
 
     if (form.current) {
       emailjs.sendForm(
-        'service_rdpuwoo', // Your service ID
-        'template_tcphlk8', // Your template ID
+        'service_pb7prtf', // Your service ID
+        'template_egydbq6', // Your template ID
         form.current,
         'lpm_hKo86prgugZUq' // Your public key
       ).then(
